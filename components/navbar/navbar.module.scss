@@ -1,0 +1,138 @@
+@import "@/styles/variables";
+
+.navbar {
+  //   border: 2px solid black;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6rem;
+
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(40px);
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  //   Logo Image Cotainer Styling
+  .logo_img_container {
+    // border: 2px solid black;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 73.496px;
+      height: 58.93px;
+      flex-shrink: 0;
+
+      @media screen and (max-width: $sm-screen) {
+        width: 36.168px;
+        height: 29px;
+      }
+    }
+  }
+
+  //   Navbar Buttons Container styling
+  .btns_container {
+    // border: 2px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    gap: 6%;
+
+    @media screen and (max-width: $lg-screen) {
+      width: 26%;
+    }
+    @media screen and (max-width: $md-screen) {
+      width: 28%;
+    }
+    @media screen and (max-width: $sm-screen) {
+      width: 50%;
+    }
+
+    button {
+      display: flex;
+      padding: 0.6rem 1rem;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      width: auto;
+
+      /* Body/Medium 150%/Bold */
+      font-family: "Plus Jakarta Sans";
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+
+      @media screen and (max-width: $xlg-screen) {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+      }
+
+      @media screen and (max-width: $md-screen) {
+        padding: 0.6rem 0.6rem;
+        font-size: 0.8rem;
+      }
+
+      @media screen and (max-width: $sm-screen) {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+      }
+
+      @media screen and (max-width: $xsm-screen) {
+        padding: 0.6rem 0.5rem;
+        font-size: 0.7rem;
+      }
+    }
+    .add_listing {
+      border-radius: 8px;
+      border: 1px solid #000929;
+
+      color: #434a54;
+      text-align: center;
+      font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+    }
+
+    .login {
+      border-radius: 10px;
+      border: none;
+      background: linear-gradient(
+        180deg,
+        rgba(220, 4, 77, 0.74) 0%,
+        #dc044d 100%
+      );
+
+      color: #f4f5f7;
+      text-align: center;
+      font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+    }
+
+    @media screen and (max-width: $sm-screen) {
+      width: 60%;
+      justify-content: center;
+    }
+  }
+
+  .toggle_icon {
+    display: none;
+
+    @media screen and (max-width: $sm-screen) {
+      display: flex;
+      width: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 25px;
+        height: 18px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.section_1 {
+  width: 100vw;
+  height: 90vh;
+
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive height */
+  background-image: url("/assets/images/map-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding-top: 7rem;
+}
