@@ -1,0 +1,52 @@
+@import "@/styles/variables";
+
+.section5 {
+  width: 100vw;
+  min-height: 100vh;
+
+  background: #f3f5f7;
+  box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.2);
+  border: 2px solid black;
+
+  padding: 2rem 0 1rem 0;
+
+  .heading {
+    width: 80%;
+    margin: auto;
+
+    color: #000929;
+
+    font-family: "Plus Jakarta Sans";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -0.4px;
+
+    fill: #000929;
+  }
+
+  .para {
+    width: 80%;
+    margin: auto;
+
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 1rem;
+    fill: #000929;
+    opacity: 0.7;
+  }
+
+  .property_cards_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+  }
+}

@@ -1,0 +1,87 @@
+.product_card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    margin-left: 5%;
+  }
+
+  // border-radius: 12px;
+  // border: 2px solid #beb7b7;
+  // border-left: none;
+
+  margin-bottom: 3rem;
+  .card_image {
+    width: 100%;
+    height: 251px;
+    flex-shrink: 0;
+    // border-radius: 12px 0 0 12px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .card_body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+
+    .price_and_heart {
+      border: 2px solid black;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      .price {
+        width: 80%;
+        display: flex;
+        align-items: center;
+
+        color: #dc044d;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 150%;
+        letter-spacing: 0.5px;
+
+        span {
+          color: #000929;
+
+          font-family: "Plus Jakarta Sans";
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+        }
+      }
+
+      .heart_container {
+        width: 10%;
+        // width: 48px;
+        // height: 48px;
+
+        display: flex;
+        justify-content: center;
+        align-self: center;
+
+        border-radius: 50%;
+
+        background: #f4f5f7;
+
+        border: 1.5px solid e8e6f9;
+
+        img {
+          width: 24px;
+          height: 24px;
+          flex-shrink: 0;
+        }
+      }
+    }
+  }
+}

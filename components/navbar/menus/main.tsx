@@ -30,7 +30,7 @@ const MainMenu = ({ showMobileMenu }: { showMobileMenu: boolean }) => {
     setSelectedMenu("contact");
   };
 
-  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState<number>(window?.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {

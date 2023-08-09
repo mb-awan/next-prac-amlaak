@@ -1,0 +1,125 @@
+@import "@/styles/variables";
+
+.section4 {
+  width: 100vw;
+  min-height: 100vh;
+
+  background: #f3f5f7;
+  box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.2);
+  border: 2px solid black;
+
+  padding: 2rem 0 1rem 0;
+
+  .header {
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+    .heading_and_para {
+      width: 50%;
+      .heading {
+        width: 100%;
+        margin: auto;
+
+        color: #000929;
+
+        font-family: "Plus Jakarta Sans";
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        letter-spacing: -0.4px;
+
+        fill: #000929;
+      }
+
+      .para {
+        width: 100%;
+        margin: auto;
+
+        font-family: "Roboto";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        margin-top: 1rem;
+        fill: #000929;
+        opacity: 0.7;
+      }
+    }
+    .browse_btn {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      button {
+        border-radius: 10px;
+        background: linear-gradient(
+          180deg,
+          rgba(220, 4, 77, 0.74) 0%,
+          #dc044d 100%
+        );
+
+        display: inline-flex;
+        padding: 1rem 2rem;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        color: #f4f5f7;
+        text-align: center;
+        font-feature-settings: "ss04" on, "ss06" on, "liga" off;
+
+        font-family: "Plus Jakarta Sans";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+      }
+    }
+  }
+
+  .slider_container {
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+    // border: 2px solid black;
+
+    padding-left: 2%;
+
+    .customArrow {
+      background: none;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      top: 30%; /* Adjust this value to vertically center the arrows */
+      //   transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1; /* Ensure the arrows are above the slides */
+      width: 41px;
+      height: 41px;
+      transition: background-color 0.3s ease;
+
+      &.prevArrow {
+        left: 0; /* Adjust this value to position the previous arrow */
+      }
+
+      &.nextArrow {
+        right: 0; /* Adjust this value to position the next arrow */
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
