@@ -12,7 +12,7 @@ const PrevArrow = (props: any) => {
       className={`${classes.customArrow} ${classes.prevArrow}`}
       onClick={props.onClick}
     >
-      <img src="/assets/images/prev-arrow.svg" alt="prev" />
+      <img src="/assets/images/round-prev-arrow.svg" alt="prev" />
     </button>
   );
 };
@@ -23,7 +23,7 @@ const NextArrow = (props: any) => {
       className={`${classes.customArrow} ${classes.nextArrow}`}
       onClick={props.onClick}
     >
-      <img src="/assets/images/next-arrow.svg" alt="next" />
+      <img src="/assets/images/round-next-arrow.svg" alt="next" />
     </button>
   );
 };
@@ -55,48 +55,91 @@ const Section4 = () => {
 
       <div className={classes.slider_container}>
         <Slider {...settings}>
-          <div>
-            <ProductCard
-              imgPath="/assets/images/palm-harbor.png"
-              areaName="Gullberg III"
-              totalProperties={90}
-            />
-          </div>
-          <div>
-            <ProductCard
-              imgPath="/assets/images/beverly-spring-field.png"
-              areaName="Gullberg III"
-              totalProperties={90}
-            />
-          </div>
-          <div>
-            <ProductCard
-              imgPath="/assets/images/faulkner-ave.png"
-              areaName="Gullberg III"
-              totalProperties={90}
-            />
-          </div>
-          <div>
-            <ProductCard
-              imgPath="/assets/images/gullberg-3.png"
-              areaName="Gullberg III"
-              totalProperties={90}
-            />
-          </div>
-          <div>
-            <ProductCard
-              imgPath="/assets/images/gullberg-3.png"
-              areaName="Gullberg III"
-              totalProperties={90}
-            />
-          </div>
-          <div>
-            <ProductCard
-              imgPath="/assets/images/gullberg-3.png"
-              areaName="Gullberg III"
-              totalProperties={90}
-            />
-          </div>
+          <ProductCard
+            imgPath="/assets/images/palm-harbor.png"
+            price="PKR  7.6 Cr "
+            duration="Sell"
+            areaName="Palm Harbor"
+            address="68 Aourangzaib Block  Garden Town"
+            total={{
+              bedroom: 3,
+              bath: 2,
+              size: "5x7 m²",
+            }}
+            popular={true}
+            showHeart={true}
+          />
+          <ProductCard
+            imgPath="/assets/images/beverly-spring-field.png"
+            price="PKR  1.6  Lakh"
+            duration="month"
+            areaName="Beverly Springfield"
+            address="68 Aourangzaib Block  Garden Town"
+            total={{
+              bedroom: 4,
+              bath: 2,
+              size: "6x7.5 m²",
+            }}
+            popular={true}
+            showHeart={true}
+          />
+          <ProductCard
+            imgPath="/assets/images/palm-harbor.png"
+            price="PKR  1.6  Lakh"
+            duration="month"
+            areaName="Faulkner Ave"
+            address="68 Aourangzaib Block  Garden Town"
+            total={{
+              bedroom: 4,
+              bath: 3,
+              size: "8x10 m²",
+            }}
+            popular={true}
+            showHeart={true}
+          />
+          <ProductCard
+            imgPath="/assets/images/palm-harbor.png"
+            price="PKR  7.6 Cr "
+            duration="Sell"
+            areaName="Palm Harbor"
+            address="68 Aourangzaib Block  Garden Town"
+            total={{
+              bedroom: 3,
+              bath: 2,
+              size: "5x7 m²",
+            }}
+            popular={true}
+            showHeart={true}
+          />
+
+          <ProductCard
+            imgPath="/assets/images/beverly-spring-field.png"
+            price="PKR  1.6  Lakh"
+            duration="month"
+            areaName="Beverly Springfield"
+            address="68 Aourangzaib Block  Garden Town"
+            total={{
+              bedroom: 4,
+              bath: 2,
+              size: "6x7.5 m²",
+            }}
+            popular={true}
+            showHeart={true}
+          />
+          <ProductCard
+            imgPath="/assets/images/palm-harbor.png"
+            price="PKR  1.6  Lakh"
+            duration="month"
+            areaName="Faulkner Ave"
+            address="68 Aourangzaib Block  Garden Town"
+            total={{
+              bedroom: 4,
+              bath: 3,
+              size: "8x10 m²",
+            }}
+            popular={true}
+            showHeart={true}
+          />
         </Slider>
       </div>
     </div>

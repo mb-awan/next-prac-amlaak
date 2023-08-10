@@ -6,7 +6,7 @@
 
   background: #f3f5f7;
   box-shadow: 0px 4px 200px 0px rgba(232, 249, 247, 0.2);
-  border: 2px solid black;
+  //   border: 2px solid black;
 
   padding: 2rem 0 1rem 0;
 
@@ -82,27 +82,25 @@
   }
 
   .slider_container {
-    width: 80%;
+    width: 86%;
     margin: auto;
     margin-top: 4rem;
     // border: 2px solid black;
-
     padding-left: 2%;
 
+    position: relative;
     .customArrow {
       background: none;
       border: none;
       cursor: pointer;
       position: absolute;
-      top: 30%; /* Adjust this value to vertically center the arrows */
-      //   transform: translateY(-50%);
+      top: 20%;
       display: flex;
-      align-items: center;
       justify-content: center;
-      z-index: 1; /* Ensure the arrows are above the slides */
-      width: 41px;
-      height: 41px;
-      transition: background-color 0.3s ease;
+      align-items: center;
+      z-index: 1;
+      width: 51px;
+      height: 51px;
 
       &.prevArrow {
         left: 0; /* Adjust this value to position the previous arrow */
@@ -115,10 +113,6 @@
       img {
         width: 100%;
         height: 100%;
-      }
-
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
       }
     }
   }

@@ -1,3 +1,5 @@
+@import "/components/section4/card/product.module.scss";
+
 .section_1 {
   width: 100vw;
   height: 100vh;
@@ -295,5 +297,28 @@
 
   .right_container {
     width: 50%;
+    position: relative;
+    .card1 {
+      width: 40%;
+      position: absolute;
+      left: 0;
+      top: 15vh;
+
+      .card1_additions {
+        .card_image {
+          height: 10px;
+        }
+      }
+    }
+
+    .card2 {
+      width: 30%;
+      position: absolute;
+      right: 5vw;
+      bottom: 5vh;
+
+      .card2_additions {
+      }
+    }
   }
 }

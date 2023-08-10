@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); // poppins font
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap"); // plus jakarta sans font
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); // Roboto font
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap"); //Nunito Sans
 
 html {
   font-size: 16px;
@@ -30,4 +31,57 @@ button {
 li {
   list-style: none;
   cursor: pointer;
+}
+
+/* Apply custom styling to the slide */
+.slick-slide {
+  margin: 2px;
+}
+
+.slick-list {
+  // border: 2px solid black;
+
+  height: 500px;
+}
+
+.custom-dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.slick-dots {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #000;
+  opacity: 0.75;
+}
+
+/* Custom styles for arrows */
+.slick-prev,
+.slick-next {
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-prev {
+  left: -30px;
+}
+
+.slick-next {
+  right: -30px;
 }
